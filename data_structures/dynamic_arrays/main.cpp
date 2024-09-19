@@ -7,7 +7,13 @@
 int main(int argc, char* argv[]){
 
 	Vectors *exampleVector = new Vectors();
+	int initInteger;
 
+	if(argc <= 1){
+		printf("Too few arguments provided!\n");
+		return 0;
+	}
+	
 	if(argc > 1){
 		exampleVector->setIntegerVector(std::atoi(argv[1]));
 	}
@@ -19,7 +25,6 @@ int main(int argc, char* argv[]){
 	}	
 
 	std::vector<int> theVector = exampleVector->getIntegerVector();
-
 	for(int i : theVector){
 		printf("%d\n", i);
 	}	

@@ -14,3 +14,4 @@ void Vectors::setIntegerVector(int num){
 void Vectors::appendIntegerVector(int num){
 	intVector->push_back(num);
 }
+
